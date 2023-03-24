@@ -1,5 +1,5 @@
 /**
- * @name KurgEpiercer's Theme
+ * @name jdy
  * @author ClearVision Team
  * @version 6.3.0
  * @description Highly customizable and beautiful theme for BetterDiscord.
@@ -9,30 +9,29 @@
  * @BDEditor Clear Vision
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah:wght@100;300;400;500;700&display=swap');
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 
 :root {
-  --main-color: #B885DF;
-  --hover-color: #A373C7;
-  --success-color: #43b581;
-  --danger-color: #982929;
-  --url-color: var(--main-color);
-  --background-image: url('https://i.imgur.com/4YLtH1e.jpg');
+  --main-color: #00F5FC;
+  --hover-color: #0F7EFF;
+  --success-color: #2EE994;
+  --danger-color: #932626;
+  --url-color: #252AFF;
+  --background-image: transparent;
   --background-shading: 100%;
-  --background-position: center left;
+  --background-position: center;
   --background-size: cover;
   --background-repeat: no-repeat;
   --background-attachment: fixed;
-  --background-brightness: 100%;
+  --background-brightness: 93%;
   --background-contrast: 100%;
   --background-saturation: 100%;
   --background-grayscale: 0%;
   --background-invert: 0%;
   --background-blur: 0px;
-  --background-overlay: rgba(0,0,0,0.6);
-  --user-popout-image: url('https://i.imgur.com/91t37kB.jpg');
-  --user-popout-position: center left;
+  --background-overlay: rgb(122,127,153,0.28);
+  --user-popout-image: transparent;
+  --user-popout-position: center;
   --user-popout-size: cover;
   --user-popout-repeat: no-repeat;
   --user-popout-attachment: fixed;
@@ -41,8 +40,8 @@
   --user-popout-saturation: 100%;
   --user-popout-grayscale: 0%;
   --user-popout-invert: 0%;
-  --user-popout-blur: 3px;
-  --user-modal-image: url('https://i.imgur.com/ZEYh5sS.jpg');
+  --user-popout-blur: 2px;
+  --user-modal-image: transparent;
   --user-modal-position: center;
   --user-modal-size: cover;
   --user-modal-repeat: no-repeat;
@@ -53,21 +52,21 @@
   --user-modal-grayscale: 0%;
   --user-modal-invert: 0%;
   --user-modal-blur: 3px;
-  --home-icon: url('https://i.imgur.com/mncudxa.jpg');
+  --home-icon: url('https://clearvision.github.io/icons/discord.svg');
   --home-position: center;
-  --home-size: 48px;
-  --channel-unread: var(--main-color);
-  --channel-color: rgba(255,255,255,0.3);
-  --muted-color: rgba(255,255,255,0.1);
-  --online-color: #43b581;
-  --idle-color: #faa61a;
-  --dnd-color: #982929;
+  --home-size: 40px;
+  --channel-unread: #C2C2C2;
+  --channel-color: rgb(255,255,255,0.3);
+  --muted-color: rgb(255,255,255,0.1);
+  --online-color: #2BC492;
+  --idle-color: #FAE31A;
+  --dnd-color: #B62222;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: Gloria Hallelujah;
+  --main-font: gg sans;
   --code-font: Consolas;
-  --channels-width: 230px;
-  --members-width: 230px;
+  --channels-width: 220px;
+  --members-width: 240px;
   --backdrop-overlay: rgba(0,0,0,0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
@@ -87,5 +86,38 @@
 }
 
 /* Any custom CSS below here */
+/**
+ * @name RadialStatus
+ * @author Gibbu#1211
+ * @version 2.0.0
+ * @invite ZHthyCw
+ * @description Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
+ * @source https://github.com/DiscordStyles/RadialStatus
+ * @website https://www.gibbu.me
+*/
+
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+
+:root {
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
 
 
